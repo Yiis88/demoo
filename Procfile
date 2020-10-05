@@ -1,0 +1,1 @@
+web: gunicorn rentour.wsgi --log-file -

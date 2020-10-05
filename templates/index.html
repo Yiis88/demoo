@@ -1,0 +1,285 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+</section>
+<section class="p-5 tm-container-outer tm-bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+                <h2 class="text-uppercase mb-4"><strong>Turismo Real</strong> RentOur</h2>
+                <p class="mb-4">Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt
+                    mi metus quis lectus. Duis nec lobortis velit. Vivamus id magna vulputate, tempor ante eget, tempus
+                    augue. Maecenas ultricies neque magna.</p>
+                <a href="/login" class="text-uppercase btn-primary tm-btn">Autenticar usuario</a>
+                <br />
+                <p></p>
+                <a href="/register" class="text-uppercase btn-primary tm-btn">Registrar usuario</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="tm-container-outer" id="tm-section-2">
+    <section class="tm-slideshow-section">
+        <div class="tm-slideshow">
+            <img src="{% static 'img/img01.jpg' %}" alt="Image">
+            <img src="{% static 'img/img02.jpg' %}" alt="Image">
+
+        </div>
+        <div class="tm-slideshow-description tm-bg-primary">
+            <h2 class="">Realiza tu Reserva</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer ante volutpat, ullamcorper ligula ac
+                dictumst habitant elementum tempus habitasse lacus morbi, phasellus pretium porta taciti aliquet
+                fermentum per purus fames. Eros hendrerit leo risus quisque odio donec ad.</p>
+            <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Ver más</a>
+        </div>
+    </section>
+
+    <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+        <div class="tm-right tm-slideshow tm-slideshow-highlight">
+            <img src="{% static 'img/tm-img-02.jpg' %}" alt="Image">
+            <img src="{% static 'img/tm-img-03.jpg' %}" alt="Image">
+
+        </div>
+
+        <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+            <h2 class="">Conoce Nuestros Servicios</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit integer ante volutpat, ullamcorper ligula ac
+                dictumst habitant elementum tempus habitasse lacus morbi, phasellus pretium porta taciti aliquet
+                fermentum per purus fames. Eros hendrerit leo risus quisque odio donec ad.</p>
+            <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Ver más</a>
+        </div>
+
+    </section>
+
+</div>
+<div class="tm-container-outer" id="tm-section-3">
+    <ul class="nav nav-pills tm-tabs-links">
+        <li class="tm-tab-link-li">
+            <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                <img src="{% static 'img/norte.png' %}" alt="Image" class="img-fluid">
+                Zona Norte Chile
+            </a>
+        </li>
+        <li class="tm-tab-link-li">
+            <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                <img src="{% static 'img/sur.png' %}" alt="Image" class="img-fluid">
+                Litoral Central
+            </a>
+        </li>
+        <li class="tm-tab-link-li">
+            <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                <img src="{% static 'img/litoral.png' %}" alt="Image" class="img-fluid">
+                Zona Sur Chile
+            </a>
+        </li>
+
+    </ul>
+    <div class="tab-content clearfix">
+
+        <!-- Tab 1 -->
+        <div class="tab-pane fade" id="1a">
+            <div class="tm-recommended-place-wrap">
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-06.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Cavancha</h3>
+                        <p class="tm-text-highlight">Zona Norte</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$110</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-07.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Chinchorro</h3>
+                        <p class="tm-text-highlight">Zona Norte</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <div id="preload-hover-img"></div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$120</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-05.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Antofagasta</h3>
+                        <p class="tm-text-highlight">Zona Norte</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$130</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-04.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Michilla</h3>
+                        <p class="tm-text-highlight">Zona Norte</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$140</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Ver más</a>
+        </div> <!-- tab-pane -->
+
+        <!-- Tab 2 -->
+        <div class="tab-pane fade" id="2a">
+
+            <div class="tm-recommended-place-wrap">
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-05.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Reñaca</h3>
+                        <p class="tm-text-highlight">Litoral</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$220</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-04.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto El Canelillo</h3>
+                        <p class="tm-text-highlight">Litoral</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$230</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-07.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Puchuncavi</h3>
+                        <p class="tm-text-highlight">Litoral</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$240</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-06.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Playa Amarilla</h3>
+                        <p class="tm-text-highlight">Litoral</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$250</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Ver más</a>
+        </div> <!-- tab-pane -->
+
+        <!-- Tab 3 -->
+        <div class="tab-pane fade" id="3a">
+
+            <div class="tm-recommended-place-wrap">
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-04.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Playa Los Molinos</h3>
+                        <p class="tm-text-highlight">Zona Sur</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$330</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-05.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Playa Grande</h3>
+                        <p class="tm-text-highlight">Zona Sur</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$340</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-06.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Playa Duao</h3>
+                        <p class="tm-text-highlight">Zona Sur</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$350</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+
+                <div class="tm-recommended-place">
+                    <img src="{% static 'img/tm-img-07.jpg' %}" alt="Image" class="img-fluid tm-recommended-img">
+                    <div class="tm-recommended-description-box">
+                        <h3 class="tm-recommended-title">Depto Playa Los Gringos</h3>
+                        <p class="tm-text-highlight">Zona Sur</p>
+                        <p class="tm-text-gray">Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu
+                            varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                    </div>
+                    <a href="#" class="tm-recommended-price-box">
+                        <p class="tm-recommended-price">$360</p>
+                        <p class="tm-recommended-price-link">Ver más</p>
+                    </a>
+                </div>
+            </div>
+
+            <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Ver más</a>
+        </div> <!-- tab-pane -->
+
+    </div>
+</div>
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<section class="p-5 tm-container-outer tm-bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">
+        <h2>Área para miembros</h2>
+
+        {{request.user.tipo_usuario}}
+        <p>
+          Bienvenido <b>{{request.user.nombres}} {{request.user.apellidos}}</b>, esta
+          página es exclusiva para usuarios registrados.
+        </p>
+
+        <hr />
+
+        <a href="/" class="btn btn-success">Inicio</a>
+        <br />
+        <p></p>
+        {% if request.user.is_superuser %}
+        <a href="/admin" class="btn btn-success">Administrar</a>
+        <br />
+        {% endif %}
+        <p></p>
+
+        <a href="/logout" class="btn btn-success">Cerrar sesión</a>
+
+      </div>
+</section>
+{% endblock %}
