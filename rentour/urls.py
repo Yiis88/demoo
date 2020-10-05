@@ -29,4 +29,4 @@ urlpatterns = [
     path('logout', views.logout, name='logout'),
     path('reserva', views.login, name='reserva'),
     path('admin/', admin.site.urls),
-]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
