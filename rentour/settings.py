@@ -19,13 +19,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag'
-import os
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '-^6zuc-q3nhv=()kptf2qnir9o5z&p0h&zp&!psv=)xr5g#i6g')
+
+SECRET_KEY = config('SECRET_KEY', default=('DJANGO_SECRET_KEY', '611b6d2d55802c5f7671a5e38dec92c96ebd79b774fa8d8ce01ae2dbf0ed2db1')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
-
+DEBUG = config('DJANGO_DEBUG', default=True, cast=bool)
 ALLOWED_HOSTS = ['turismorentour.herokuapp.com','127.0.0.1']
 
 
