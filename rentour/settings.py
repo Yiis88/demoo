@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '-^6zuc-q3nhv=()kptf2qnir9o5z&p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['ec2-52-202-22-140.compute-1.amazonaws.com','127.0.0.1']
+ALLOWED_HOSTS = ['turismorentour.herokuapp.com','127.0.0.1']
 
 
 # Application definition
