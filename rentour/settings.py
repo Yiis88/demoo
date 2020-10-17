@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY', default=('DJANGO_SECRET_KEY', '611b6d2d55802c5
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = os.environ.get("DEBUG", False)
-ALLOWED_HOSTS = ['turismorentour.herokuapp.com']
+ALLOWED_HOSTS = ['turismorentour.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
