@@ -9,9 +9,10 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+from pathlib import Path
 import os
 import django_heroku
-from pathlib import Path
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY', default=('DJANGO_SECRET_KEY', '611b6d2d55802c5
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = False
-ALLOWED_HOSTS = ['turismorentour.herokuapp.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['turismorentour.herokuapp.com','127.0.0.1']
 
 
 # Application definition
